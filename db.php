@@ -9,7 +9,7 @@
   {
     echo "connection failed";
   }
-  else {
+  /*else {
     echo "connection successful";
-  }
+  }*/
  ?>

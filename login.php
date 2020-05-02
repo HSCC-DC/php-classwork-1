@@ -47,7 +47,7 @@
     <form method="get" class="form-horizontal" action="">
       <center><h1 class="jumbotron">Login</h1></center>
         <label>Username: </label>
-        <input type="text" name="user">
+        <input type="text" name="username">
         <label>Email: </label>
         <input type="email" name="email">
         <label>Password: </label>
