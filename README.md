@@ -4,8 +4,8 @@
 
 Create a PHP script to establish a database connection to MySQL Server with the following configurations:
 Server name: localhost
-Username: admin
-Password: bdpa
+Username: root
+Password: ""
 Schema: conference
 
 # Scenario 2
