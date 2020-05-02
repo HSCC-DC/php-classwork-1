@@ -1,6 +1,6 @@
 # PHP Classwork Exercise 1
 
-# Scenario 1
+# Scenario 1 - keep the same schema
 
 Create a PHP script to establish a database connection to MySQL Server with the following configurations:
 Server name: localhost
