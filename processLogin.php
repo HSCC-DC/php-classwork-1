@@ -11,11 +11,12 @@ if(isset($_GET['submit']))
     if($count>0) {
         session_start();
         $_SESSION['username']= $row['username'];
-        $_SESSION['email']= $row ['email'];
+        $_SESSION['email']= $row['email'];
         header('location:index.php');
     }
     else {
         echo 'Username and Password do not match';
     }
 
+}
 ?>
