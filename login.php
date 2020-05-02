@@ -1,3 +1,4 @@
+<?php require 'processLogin.php';?>
 <!DOCTYPE html>
   <head>
   <meta charset="utf-8">
@@ -51,7 +52,7 @@
         <input type="email" name="email">
         <label>Password: </label>
         <input type="password" name="pass">
-        <button type="submit" value="submit">Submit</button>
+        <button type="submit" value="submit" name="submit">Submit</button>
       </div>
     </form>
   </div>
