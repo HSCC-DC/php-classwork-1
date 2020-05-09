@@ -1,4 +1,6 @@
-<?php require 'processLogin.php';?>
+<?php require 'processLogin.php';
+ session_start();
+?>
 <!DOCTYPE html>
   <head>
   <meta charset="utf-8">
