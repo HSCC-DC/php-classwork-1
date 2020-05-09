@@ -3,9 +3,9 @@ if(isset($_GET['submit']))
 {
 
     include "db.php";
-    $uname=$_GET ['username'];
-    $email=$_GET ['email'];
-    $pword=$_GET ['pass'];
+    $uname=trim($_GET['username']);
+    $email=trim($_GET ['email']);
+    $pword=trim($_GET ['pass']);
     $query = "SELECT * FROM users WHERE username= '$uname' AND password='$pword' AND email='$email'";
     $result = mysqli_query($conn, $query);
     $row= mysqli_fetch_assoc($result);
