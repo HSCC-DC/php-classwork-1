@@ -13,27 +13,27 @@
     //check to see if the fields are empty
     if(empty($fname))
     {
-      $empty_error = "This field is required";
+      $empty_error = "First name is required. ";
       echo "<font color='red'>" . $empty_error . "</font>";
     }
     if(empty($lname))
     {
-      $empty_error = "This field is required";
+      $empty_error = "Last name is required. ";
       echo "<font color='red'>" . $empty_error . "</font>";
     }
     if(empty($uname))
     {
-      $empty_error = "This field is required";
+      $empty_error = "Username is required. ";
       echo "<font color='red'>" . $empty_error . "</font>";
     }
     if(empty($pword))
     {
-      $empty_error = "This field is required";
+      $empty_error = "Password is required. ";
       echo "<font color='red'>" . $empty_error . "</font>";
     }
     if(empty($email))
     {
-      $empty_error = "This field is required";
+      $empty_error = "Email is required. ";
       echo "<font color='red'>" . $empty_error . "</font>";
     }
     //check if password is long enough
