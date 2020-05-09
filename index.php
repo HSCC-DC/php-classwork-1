@@ -1,16 +1,6 @@
-<<<<<<< HEAD
-<?php require 'processLogin.php';
- session_start();
-?>
-=======
-<<<<<<< HEAD
-<?php require 'processLogin.php'; session_start();?>
-=======
 <?php
 session_start();
 require 'processLogin.php';?>
->>>>>>> 63c794c2d48f5963c78ef9992b924a23ef65c15f
->>>>>>> 64349a6196be2071711e96563dd7b5269150893c
 <!DOCTYPE html>
   <head>
   <meta charset="utf-8">

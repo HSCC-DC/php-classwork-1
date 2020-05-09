@@ -7,7 +7,7 @@
     $pword = trim($_POST['pword']);
     $email = trim($_POST['email']);
 
-    $query = "INSERT into users username, password, firstname, lastname, email
+    $query = "INSERT into users where username, password, firstname, lastname, email
     values('$uname', '$pword', '$fname', '$lname', '$email')";
 
     //check to see if the fields are empty
