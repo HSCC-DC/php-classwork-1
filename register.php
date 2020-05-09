@@ -1,18 +1,6 @@
 <?php
     include ('db.php');
-    $fname="";
-    $lname="";
-    $uname="";
-    $pword="";
-    $email="";
-    if(isset($_POST['submit'])){
-        $fname=$_POST['fname'];
-        $lname=$_POST['lname'];
-        $uname=$_POST['uname'];
-        $pword=$_POST['pword'];
-        $email=$_POST['email'];
-    }
-    
+    include ('processRegister.php');
 ?>
 <html>
     <head>
