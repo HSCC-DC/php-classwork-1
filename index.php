@@ -1,11 +1,10 @@
-<<<<<<< HEAD
+
 <?php require 'processLogin.php'; session_start();?>
-=======
+
 <?php
 session_start();
 require 'processLogin.php';?>
->>>>>>> 63c794c2d48f5963c78ef9992b924a23ef65c15f
-<!DOCTYPE html>
+
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
