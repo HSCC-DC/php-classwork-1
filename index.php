@@ -1,10 +1,25 @@
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<?php require 'processLogin.php';
+ session_start();
+?>
+=======
+<<<<<<< HEAD
+>>>>>>> 1ef6232eeb94b4ba696dc470f177b56a46de572d
 <?php require 'processLogin.php'; session_start();?>
 
 <?php
 session_start();
 require 'processLogin.php';?>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 63c794c2d48f5963c78ef9992b924a23ef65c15f
+>>>>>>> 64349a6196be2071711e96563dd7b5269150893c
+<!DOCTYPE html>
+>>>>>>> 1ef6232eeb94b4ba696dc470f177b56a46de572d
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
