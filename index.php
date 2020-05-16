@@ -53,8 +53,8 @@ require 'processLogin.php';?>
 </div>
 </nav>
   <div class="container">
-      <center><h1 class="jumbotron">Welcome, <?php echo $_SESSION["username"];?></h1>
-        <p><strong>Your e-mail address is:</strong> <?php echo $_SESSION["email"];?></p>
+      <center><h1 class="jumbotron">Welcome, <?php if(isset($_SESSION["username"])){ echo $_SESSION["username"];}else{echo "Guest User";}?></h1>
+        <p><strong>Your e-mail address is:</strong> <?php if(isset($_SESSION["email"])){echo $_SESSION["email"];}else{echo "guestuser@fakemail.net";}?></p>
       </center>
       <?php
       //generate query
