@@ -1,31 +1,16 @@
-<<<<<<< HEAD
-<?php
-session_start();
-require 'processLogin.php';?>
-=======
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
+<?php
+include("db.php");
+require 'processLogin.php';?>
+
 <?php require 'processLogin.php';
  session_start();
 ?>
-=======
-<<<<<<< HEAD
->>>>>>> 1ef6232eeb94b4ba696dc470f177b56a46de572d
-<?php require 'processLogin.php'; session_start();?>
 
-<?php
-session_start();
-require 'processLogin.php';?>
-<<<<<<< HEAD
+<?php require 'processLogin.php';?>
 
-=======
->>>>>>> 63c794c2d48f5963c78ef9992b924a23ef65c15f
->>>>>>> 64349a6196be2071711e96563dd7b5269150893c
->>>>>>> 21b826d998c75c495e14c2cd2c5792b377869f5d
 <!DOCTYPE html>
->>>>>>> 1ef6232eeb94b4ba696dc470f177b56a46de572d
+
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -71,6 +56,30 @@ require 'processLogin.php';?>
       <center><h1 class="jumbotron">Welcome, <?php echo $_SESSION["username"];?></h1>
         <p><strong>Your e-mail address is:</strong> <?php echo $_SESSION["email"];?></p>
       </center>
+      <?php
+      //generate query
+        $query = "Select * from users";
+      //execute the query
+        $result = mysqli_query($conn, $query);
+        ?>
+        <!--Display the results-->
+        <table>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>E-mail address</th>
+
+         <?php
+         while ($row = mysqli_fetch_assoc($result))
+         {
+           ?>
+           <tr>
+             <td><?php echo $row["first_name"];?></td>
+             <td><?php echo $row["last_name"];?></td>
+             <td><?php echo $row["email"];?></td>
+           </tr>
+          <?php
+        }?>
+        </table>
 
   </div>
   </body>
